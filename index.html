@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISIONARY | Image Search Engine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/icon.jpeg">
+</head>
+<body>
+    <div class="loader"></div>
+    <div class="container">
+    <marquee class="toploading" behavior="scroll" direction="right" scrollamount="100"></marquee>
+    <h1>VISIONARY</h1>
+    <form id="search-form">
+        <input type="text" id="search-box" placeholder="Search any Image ">
+        <button>
+            <span class="button_top">Search
+                </span>
+            </button>
+    </form>
+    <div id="search-result"></div>
+    <button id="show-more-btn">Show more</button>
+    <footer class="footer">
+        <a href="https://github.com/yadnikgaikwad/visionary" alt="github" class="fa">&#xf09b;</a>  Copyright © 2024. Yadnik Gaikwad || All Rights Reserved.
+    </footer>
+    </div>
+    
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                document.querySelector('.loader').classList.add('fade-out');
+                document.querySelector('.main-content').classList.add('fade-in');
+            }, 1000); // 2 seconds
+        });
+    </script>
+    
+
+</body>
+
+</html>
